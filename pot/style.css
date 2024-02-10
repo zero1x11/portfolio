@@ -1,0 +1,165 @@
+/* estilo getal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2d10a0, rgb(0, 0, 0)) ;
+    height: 100vh;
+    
+
+}
+
+img {
+    width: 120px;
+    
+}
+
+.img-topo-site img {
+    width: 200px;
+    border-radius: 100%;
+    
+}
+
+img:hover {
+    transform: scale(1.20);
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.img-topo-site img:hover {
+    border: solid white;
+    border-radius: 100%;
+    
+}
+
+header a:hover {
+    transition: 1.02s;
+    color: white;
+    text-decoration: underline;
+}
+
+.interface { 
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contatos button {
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #7d2ae8;
+    font-weight:bold;
+    border: 0;
+}
+
+/* estilo do cabecalho */
+
+header {
+    padding: 40px 4%;
+
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+header a {
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: none;
+    display: inline-block;
+      
+}
+
+header nav ul {
+    list-style-type: none;
+} 
+
+header nav ul li {
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+ 
+button:hover { 
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 10px 10px 20px #7d2ae8;
+    cursor: pointer;
+    
+}
+
+/*  estilo do topo do site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #7d2ae8;
+    font-size: 50px;
+}     
+
+.topo-do-site .txt-topo-site p {
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+h2 {
+    color: white;
+    padding: 10px;
+}
+
+h2 span {
+    color: #2d10a0;
+}
+
+.especialidades-box  {  
+    color: white;
+    font-size: larger;
+    font-size: 30px;
+}   
+
+.especialidades-box p {
+    padding: 10px ;
+    
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
